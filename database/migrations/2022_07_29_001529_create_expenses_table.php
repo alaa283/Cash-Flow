@@ -23,6 +23,7 @@ class CreateExpensesTable extends Migration
             $table->integer("other_expenses");
             $table->integer("bank_loan_payment");
             $table->integer("per_child_expense");
+            $table->integer("children");
 
             $table->timestamps();
         });

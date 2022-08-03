@@ -14,11 +14,11 @@ class Realestate extends Model
 
     protected $fillable = [
         'real_estate_business',
+        'monthly_cash_flow',
         'id_expenses',
     ];
 
     public function realestates() {
-        return $this->hasMany(Expenses::class);
     }
 
 

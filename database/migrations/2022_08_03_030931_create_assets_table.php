@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateRealestatesTable extends Migration
+class CreateAssetsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,9 @@ class CreateRealestatesTable extends Migration
      */
     public function up()
     {
-        Schema::create('realestates', function (Blueprint $table) {
+        Schema::create('assets', function (Blueprint $table) {
             $table->id();
-            $table->string("real_estate_business");
-            $table->integer("monthly_cash_flow");
+            $table->integer("savings");
             $table->timestamps();
         });
     }
@@ -28,6 +27,6 @@ class CreateRealestatesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('realestates');
+        Schema::dropIfExists('assets');
     }
 }

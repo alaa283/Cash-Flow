@@ -23,9 +23,9 @@ class Expenses extends Model
         'bank_loan_payment',
         'per_child_expense',
         'id_incomes',
+        'children'
     ];
 
     public function realestates() {
-        return $this->belongsTo(Realestate::class);
     }
 }

@@ -5,13 +5,12 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Income extends Model
+class Asset extends Model
 {
     use HasFactory;
 
     protected $fillable = [
-        'salary',
-        'interest_dividends',
-        'id_people',
+        'savings',
+        'id_realestates',
     ];
 }

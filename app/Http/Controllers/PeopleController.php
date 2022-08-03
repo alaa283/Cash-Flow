@@ -23,12 +23,12 @@ class PeopleController extends Controller
         $people->dream = request('dream');
         $people->auditor = request('auditor');
         $people->save();
-        $people->id;
+        // $people->id;
         
         // dd($people->id);
         // return view('income');
         // ["data" => $people ]
 
-        return redirect()->route('income.display');
+        return redirect()->route('income.display', [$people->id]);
     }
 }

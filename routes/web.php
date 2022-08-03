@@ -6,7 +6,7 @@ use App\Http\Controllers\PeopleController;
 use App\Http\Controllers\IncomeController;
 use App\Http\Controllers\ExpensesController;
 use App\Http\Controllers\RealestateController;
-
+use App\Http\Controllers\AssetController;
 
 
 /*
@@ -31,11 +31,8 @@ use App\Http\Controllers\RealestateController;
 Route::get('/', [PeopleController::class, 'display'])->name("people.display");
 Route::post('/peoplestore', [PeopleController::class, 'store'])->name("people.store");
 
-Route::get('/incomedisplay', [IncomeController::class, 'display'])->name("income.display");
+Route::get('/incomedisplay/{id}', [IncomeController::class, 'display'])->name("income.display");
 Route::post('/incomestore', [IncomeController::class, 'store'])->name("income.store");
 
-Route::get('/expensesdisplay/{id}', [ExpensesController::class, 'display'])->name("expenses.display");
-Route::post('/expensesstore', [ExpensesController::class, 'store'])->name("expenses.store");
-
-Route::get('/realestatedisplay/{id}', [RealestateController::class, 'display'])->name("realestate.display");
-
+Route::get('/assetsdisplay/{id}', [AssetController::class, 'display'])->name("asset.display");
+Route::post('/assetsstore', [AssetController::class, 'store'])->name("asset.store");
