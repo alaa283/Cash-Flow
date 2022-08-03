@@ -162,15 +162,6 @@
             </div>
         </div>
         <button type="submit" class="btn btn-primary">Next</button>
-        <div class="row col-lg-6">
-            <h3 class="text-center col-lg-12"> Assets </h3>
-
-            <div class="form-group col-lg-12">
-                <label for="exampleInputSavings">Savings (Assets)</label>
-                <input type="number" name="savings" id="savings" class="form-control">
-            </div>
-
-        </div>
         <!-- </div> -->
            
         </form>
